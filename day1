@@ -1,0 +1,56 @@
+/*#include<iostream>
+#include<vector>
+using namespace std;
+void rotate(vector<int>& nums, int k){
+vector<int> temp(nums.size());
+for(int i =0; i<nums.size();i++){
+    temp[(i+k)%nums.size()]= nums[i];
+}
+nums = temp;
+}
+int main(){
+    vector<int> nums = {1,2,3,4,56,7};
+    int k = 3;
+    rotate(nums,k);
+    // print kr do result ko
+    for(int x: nums){
+        cout<<x<<' ';
+        
+    }
+    cout<<'\n';
+    return 0;
+}*/
+/*#include <iostream>
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    bool check(vector<int>& nums) {
+        int count = 0;
+        int n = nums.size();
+        for (int i = 1; i < n; i++) {
+            if (nums[i - 1] > nums[i]) {
+                count++;
+            }
+        }
+        if (nums[n - 1] > nums[0]) count++;
+        cout << "Count of breaks: " << count << endl;  
+        return count <= 1;
+    }
+};
+
+int main() {
+    vector<int> nums = {1, 32, 6, 8, 9, 5, 4, 3};
+    for (int x : nums) {
+        cout << x << ' ';
+    }
+    cout << '\n';
+
+    Solution sol;
+    bool result = sol.check(nums);
+    cout << "Is sorted and rotated? " << (result ? "Yes" : "No") << endl;
+
+    return 0;
+}
+*/
