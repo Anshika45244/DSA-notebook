@@ -148,23 +148,26 @@ int main(){
     return 0;
 }
   // gp
-  #include<iostream>
-#include<cmath>  // for pow()
+#include<iostream>
+#include<cmath>
 using namespace std;
-
 int Geometric(int a, int r, int n){
-    return a * pow(r, n - 1);  // GP formula: a * r^(n-1)
+return a*pow(r ,n-1);
 }
-
 int main(){
-    int a, r, n;
-    cout << "Enter first term (a), common ratio (r), and term number (n): "<<endl;
-    cin >> a >> r >> n;
-
-    int result = Geometric(a, r, n);
-    cout << "The " << n << "th term of the GP is: " << result << endl;
+    int a,r,n;
+    cout<<"enter the first term(a):"<<" ";
+     cin>>a;
+    cout<<"enter the common ratio(r):"<<" ";
+    cin>>r;
+    cout<<"enter the the number of term(n):"<<" ";
+    cin>>n;
+    int result = Geometric(a,r,n);
+    cout<<result<<endl;
     return 0;
 }
+
+
 
   
   
