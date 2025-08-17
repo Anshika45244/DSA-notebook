@@ -25,3 +25,367 @@ int main(){
     }
     return 0;
 }
+
+/*  #include<iostream>
+  using namespace std;
+  void reverse (int arr[], int n){
+      int start = 0;
+      int end = n-1;
+      while( start <= end){
+          swap(arr[start], arr[end]);
+          start++;
+          end--;
+          
+      }
+  }
+  void printArray(int arr[], int n){
+      for(int i =0; i<n;i++){
+          cout<<arr[i]<<" ";
+          
+      }
+      cout<<endl;
+      
+  }
+  int main(){
+      int arr1[6]={1,24,6,57,98,8 };
+      int arr2[7]={2,6,5,8,7,9,1};
+      reverse(arr1, 6);
+      reverse(arr2,7);
+      printArray (arr1,6);
+      printArray (arr,7);
+      return 0;
+  }*/
+  //swap alternate number 
+  #include<iostream>
+  using namespace std;
+   void reverse(int arr[], int n){
+       int start = 0;
+       int end = 1;
+       while(start<=n)
+       swap(arr[start], arr[end]);
+       start++; 
+       end++;
+       
+   }
+   void printArray(int arr[], int n){
+       for(int i =0; i<n;i++){
+           cout<<arr[i]<<" ";
+       }
+       cout<<endl;
+   }
+   int main(){
+       int arr[5]={1,2,3,4,5};
+       reverse (arr,5);
+       printArray(arr,5);
+       return 0;
+   }
+  
+  
+  
+  
+    //swap alternate number 
+/*  #include<iostream>
+  using namespace std;
+   void swap(int arr[], int n, int i){
+     int start = i;
+       int end = i+1;
+       swap(arr[ start], arr[end]);
+       start++; 
+       end++;
+       
+   }
+   void printArray(int arr[], int n){
+       for(int i =0; i<n;i++){
+           cout<<arr[i]<<" ";
+       }
+       cout<<endl;
+   }
+   int main(){
+       int arr[5]={1,2,3,4,5};
+       swap (arr,5);
+       printArray(arr,5);
+       return 0;
+   }*/
+/*   // swaping alternate
+   #include<iostream>
+   using namespace std;
+   void swapAlernate(int arr[], int n){
+   for(int i =0; i<n-1;i++){
+       swap(arr[i], arr[i+1]);
+           
+       }
+   }
+   void printArray(int arr[], int n){
+       
+   for(int i = 0; i< n; i++){
+       cout<<arr[i]<<" ";
+   }
+   cout<<endl;
+   }
+   int main(){
+         int arr[5]={1,2,3,45,5};
+         swapAlernate(arr,5);
+         printArray(arr,5);
+         return 0;
+   }
+  
+  */
+  
+  
+  
+  //AP
+#include<iostream>
+using namespace std;
+int arithmartic(int n){
+    return 3*n+7;
+}
+int main(){
+    int n;
+    cout<<" enter n:";
+    cin>>n;
+    int result = arithmartic(n);
+    cout<<"answer is"<<result <<endl;
+    return 0;
+}
+  // gp
+  #include<iostream>
+#include<cmath>  // for pow()
+using namespace std;
+
+int Geometric(int a, int r, int n){
+    return a * pow(r, n - 1);  // GP formula: a * r^(n-1)
+}
+
+int main(){
+    int a, r, n;
+    cout << "Enter first term (a), common ratio (r), and term number (n): "<<endl;
+    cin >> a >> r >> n;
+
+    int result = Geometric(a, r, n);
+    cout << "The " << n << "th term of the GP is: " << result << endl;
+    return 0;
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
