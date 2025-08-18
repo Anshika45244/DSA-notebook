@@ -170,7 +170,222 @@ int main(){
 
 
   
-  
+  /* find duplicate
+#include<iostream>
+#include<vector>
+using namespace std;
+int findDuplicate(const vector<int>&arr){
+    int ans = 0;
+    for(int i= 0; i< arr.size(); i++){
+        ans = ans^arr[i];
+        
+    }
+    for(int i = 1; i<arr.size();i++){
+        ans = ans ^i;
+    }
+ return ans;
+}
+int main(){
+    vector<int> arr ={ 1,2,3,5,4,2};
+    cout<<"duplicate element is :"<< findDuplicate(arr)<<endl;
+    return 0;
+}
+#include<iostream>
+#include<vector>
+#include<unordered_map>
+
+using namespace std;
+int main(){
+    vector<int>arr ={1,2,3,4,6,5,3,4,2};
+    unordered_map<int , int> freq;
+    for(int i=0; i< arr.size();i++){
+        freq[arr[i]]++;
+    }
+        cout<<"duplicate element is:";
+        for(auto it :freq){
+            if(it.second>1){
+                cout<<it.first<<" ";
+                
+            }
+        }
+        cout<<endl;
+         return 0;
+    }
+
+// pair sum
+#include<iostream>
+#include<vector>
+#include<unordered_map>
+using namespace std;
+int main(){
+    vector<int> arr={1,2,3,4,5};
+    int target= 5;
+    unordered_map<int, int> freq;
+    cout<<"pair with sum"<<target<<"are:\n";
+    for(int i =0; i<arr.size();i++){
+        int complement = target - arr[i];
+        if(freq[complement]>0){
+            cout<<"("<<arr[i]<<", "<<complement<<")\n";
+            freq[complement]--;
+            
+    }
+    else{
+        freq[arr[i]]++;
+    
+}
+}
+return 0;
+}*/
+/*#include<iostream>
+#include<vector>
+#include<algorithm>// ye sort function ko  include karta hai
+using namespace std;
+// function top find triplet
+void findTriplets(vector<int>&arr, int target){
+    sort(arr.begin(),arr.end());// sort karenge jisse 2 pointer techniue laga pao
+    cout<<" triplet wth sum"<<target <<"are:\n";
+    //fixed karo element karo ek ek kar karenge
+    for(int i= 0; i<arr.size()-2;i++)
+    {
+     int left =i+1;
+     int right = arr.size()-1;
+     // use two pointer two find remaining two elements
+     while(left<right){
+         int  sum = arr[i]+arr[left]+arr[right];
+         if(sum== target){
+             
+                cout << "(" << arr[i] << ", " << arr[left] << ", " << arr[right] << ")\n";
+                left++;    // Move left pointer forward
+                right--;   // Move right pointer backward
+            } else if (sum < target) {
+                left++;    // If sum is too small, move left to increase sum
+            } else {
+                right--;   //  If sum is too large, move right to decrease sum
+            }
+        }
+    }
+}
+
+//  Main function to test the triplet finder
+int main() {
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7};  
+    int target = 12;                          
+    findTriplets(arr, target);          
+     return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
