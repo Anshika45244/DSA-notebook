@@ -166,6 +166,247 @@ int main(){
     return 0;
 }
 */
+/*///CONSTRUCTOR
+//1 default CONSTRUCTOR
+#include<iostream>
+#include<string>
+using namespace std;
+void defaultConstructor(){
+    string s;//empty string
+    cout<<"empaty string :"<<s<<" "<<endl;
+    
+}
+int main(){
+    defaultConstructor();
+    return 0;
+}
+
+
+//2 c-string CONSTRUCTOR1
+
+#include<iostream>
+#include<string>
+using namespace std;
+void cStringConstructor(){
+    string s ("hello");//ye hai hamara c-style string construct
+    cout<<"c-string: "<<s<<endl;
+    
+}
+int main(){
+    cStringConstructor();
+    return 0;
+}
+//copy constructor
+#include<iostream>
+#include<string>
+using namespace std;
+void copyConstructor(){
+    string original("duniya");
+    string copy(original);
+    cout<<"original:"<<original<<" ,copy:"<<copy<<endl;
+}
+int main(){
+    copyConstructor();
+    return 0;
+}
+
+
+//fill comstructor
+#include<iostream>
+#include<string>
+using namespace std;
+void fillConstructor(){
+    string s(4,'A');
+    cout<<"filled string :"<<s<< endl;
+    
+}
+int main(){
+    fillConstructor();
+    return 0;
+}
+//substring CONSTRUCTOR
+#include<iostream>
+#include<string>
+using namespace std;
+void substringConstructor(){
+    string s1("codinnnnnngggg");
+    string s2(s1,3,6);
+    //start from 3 and have length 6
+    cout<<"substring: "<<s2<<endl;
+    
+}
+int main(){
+    substringConstructor();
+    return 0;
+
+}
+*/
+
+/////////Destructor
+//automatic Destructor cell
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Demo {
+public:
+    string s;
+    Demo(string str) : s(str) { cout << "Constructed " << s << endl; }
+    ~Demo() { cout << "Destroyed " << s << endl; }
+};
+
+void multipleObjectsDemo() {
+    Demo a("A");
+    Demo b("B");
+}
+
+int main() {
+    multipleObjectsDemo();
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
