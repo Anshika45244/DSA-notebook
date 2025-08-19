@@ -1,0 +1,330 @@
+/*/ // print the first and last character of a string using value_type
+ #include<iostream>
+#include<string>
+using namespace std;
+void printFirstLast(const string &s){
+    string::value_type first = s[0];//value_type = char;pehle char
+    string::value_type last =s[s.size()-1];// akhari charcter ko maan lo non empaty hai s
+   cout<<"First: "<<first <<" , Last: "<<last<<endl;
+}
+int main(){
+    string s = "Mera naam Anshika hai";
+// test the string
+    printFirstLast(s);
+    return 0;
+}
+
+// replace all vowels in astrimng with * using value_type
+#include<iostream>
+#include<string>
+using namespace std;
+void replaceVowels(string &s){
+    for(size_t i = 0;  i<s.size(); i++){
+        string:: value_type ch = s[i];
+        if(ch=='a'||ch=='i'||ch=='o'||ch=='u'){
+            s[i]='*';
+
+        }
+    }
+    cout<<"modified  string :"<<s<< endl;
+}
+int main(){
+    string s ="heyya whats up!";
+    replaceVowels(s);
+    return 0;
+}
+
+//change second charcter of a string using reference (const_reference)
+
+#include<iostream>
+#include<string>
+using namespace std;
+ void modifySecondChar(string &s){
+     string::reference ref = s[1];
+     ref = 'a';
+     cout<<"modified string: "<<s<<endl;
+}
+int main(){
+    string s ="kem choo ! maja maa: ";
+    modifySecondChar(s);
+    return 0;
+}
+
+
+//read third charcter using const_reference
+ #include<iostream>
+ #include<string>
+ using namespace std;
+ void readThirdChar(const string &s){
+     string ::const_reference cref = s[2];
+     cout<<"third charcter: "<<cref<<endl;
+ }
+int main(){
+    string s= "dosto chalo coding karte hai";
+    readThirdChar(s);
+    return 0;
+}
+
+//print string using iterator
+#include<iostream>
+#include<string>
+using namespace std;
+void printWithIterator(string &s){
+for(string::iterator it = s.begin(); it != s.end();++it){
+    cout<<*it<<" ";
+}
+cout<<endl;
+}
+int main(){
+    string s ="mera naam hai Anshika";
+    printWithIterator(s);
+    return 0;
+}*/
+
+
+/*
+// print string in reverse using reverse_iterator
+#include<iostream>
+#include<string>
+using namespace std;
+void printReverseIterator(const string &s)
+{
+	cout<<"Reverse : ";
+	for(string::const_reverse_iterator rit =s.rbegin(); rit !=s.rend(); ++rit) {
+		cout<< *rit;
+	}
+	cout<<endl;
+}
+int main() {
+	string s ="cpp";
+	printReverseIterator(s);
+	return 0;
+}
+
+*/
+/*
+// access first charcter using pointer 
+#include<iostream>
+#include<string>
+using namespace std;
+void FirstCharPointer(string &s){
+    string::pointer p =&s[0];
+    cout<<"first char via pointer :"<<*p <<endl;
+}
+int main(){
+    string s ="padhai karo achhe se";
+   FirstCharPointer(s);
+    return 0;
+}
+*/
+/*
+
+//Access string as c-string with const_pointer
+#include<iostream>
+#include<string>
+using namespace std;
+void acessCstring(const string &s){
+    string::const_pointer cp = s.c_str();
+    cout<<"C-style string: "<<cp<<endl;
+    
+}
+int main(){
+    string s ="HELLO";
+    acessCstring(s);
+    return  0;
+}
+
+//find distance btween two iterator
+#include <iostream>
+#include <string>
+using namespace std;
+
+void findDistance(const string &s) {
+    string::const_iterator it1 = s.begin();     
+    string::const_iterator it2 = s.begin() + 4; 
+    string::difference_type dist = it2 - it1;
+    cout << "Distance between 'a' and 'e': " << dist << endl;
+}
+
+int main() {
+    string s = "abcdef";
+    findDistance(s);
+    return 0;
+}
+
+//print string length using size_type
+#include<iostream>
+#include<string>
+using namespace std;
+void printStringLength(string &s){
+    string::size_type len =s.size();
+    cout<<"Length of string: "<<len <<endl;
+}
+int main(){
+    string s ="anshika";
+    printStringLength(s);
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
