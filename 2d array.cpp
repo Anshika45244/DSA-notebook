@@ -133,7 +133,103 @@ return 0;
 
 
 
+/*#include<iostream>
+using namespace std;
+void isSum(int arr[][4],int row , int col){
+    cout<<"printing col sum"<<endl;
+    for(int j =0 ; j<col;j++){
+    int sum =0;
+    for(int i =0; i<row; i++){
+     sum+=arr[i][j];   
+    }
+    cout<<sum<<" ";
+}
+cout<<endl;
+}
 
+int main(){
+   int arr[4][4];
+   //yaha hm input karwayenge
+   cout<<"enter the 4*4 matrix element"<<endl;
+   for(int i=0;i<4;i++){
+       for(int j =0; j<4;j++){
+           cin>>arr[i][j];
+           
+       }
+   }
+   // calling function
+   isSum(arr,4,4);
+   return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+void isprintrowsum(int arr[][3],int row, int col){
+    cout<<"printing row sum"<<endl;
+    for(int i =0; i<row;i++){
+        int sum =0;
+        for(int j =0;j<col;j++){
+            sum+= arr[i][j];
+        }
+        cout<<sum<<" ";
+    }
+    cout<<endl;
+}
+int main(){
+    int arr[3][3];
+    cout<<"enter the 3*3 matrix for row sum"<<endl;
+    for(int i=0;i<3;i++){
+        for(int j =0; j<3;j++){
+            cin>>arr[i][j];
+        }
+    }
+    // calling function
+    isprintrowsum(arr,3,3);
+    return 0;
+    
+}
+
+
+#include<iostream>
+#include<climits>//forINT_MIN
+using namespace std;
+int largestRow(int arr[][3],int row, int col)
+{
+    int max = INT_MIN;
+    int rowIndex=-1;
+    for(int i=0; i<row;i++){
+        int sum = 0;
+        for(int j=0; j<col;j++){
+            sum +=arr[i][j];
+            
+        }
+        if(sum>max){
+            max=sum;
+            rowIndex=i;
+            
+        }
+    }
+    return rowIndex;
+}
+int main(){
+    cout<<"enter the 3*3 matrix"<<endl;
+int arr[3][3];
+for(int i=0; i<3;i++){
+    for(int j=0; j<3;j++){
+        cin>>arr[i][j];
+    }
+}
+int index = largestRow(arr,3,3);
+cout<<"the row with the max"<<index<<endl;
+      return 0;
+  }
+
+
+
+
+
+*/
 
 
 
